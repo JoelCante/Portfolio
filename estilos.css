@@ -54,7 +54,7 @@
     width: 100%;
     height: 55px;
     border-bottom: 2px solid #FFFFFF00;
-    margin-top: 10px;
+    padding-top: 10px;
     transition: 0.5s;
     /*border: 1px solid red;*/
   }
@@ -64,7 +64,7 @@
    backdrop-filter: blur(10px);
    border-bottom: 2px solid #F0F0F0;
    height: 50px;
-   margin-top: 0px;
+   padding-top: 0px;
   }
 
   .contenedor-menu{
@@ -100,6 +100,10 @@
     height: auto;
   }
 
+  .menu-movil{
+   display: none;
+  }
+  
   .contenedor-cabecera{
     display: flex;
     flex-direction: column;
@@ -217,6 +221,10 @@
 
   .texto-azul{
     color:#2779ca;
+  }
+
+  .texto-rojo{
+    color:#F57C7C;
   }
 
   .seccion-diseño{
@@ -451,7 +459,80 @@
     height: 570px;
    }
 
+   .seccion-frontend{
+    background-color: #F9FCFF;
+   }
 
+   .seccion-hablemos{
+    background-color: #FFF3F3;
+    padding-bottom: 140px;
+   }
+
+   .titulo-hablemos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 2px solid navy;*/
+  }
+
+  .titulo-hablemos h2{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    width: 70%;
+    padding-top: 150px;
+  }
+
+  .contenido-hablemos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 610px;
+    margin-top:40px;
+   /* border: 1px solid violet;*/
+  }
+
+  .contenido-hablemos h2{
+    font-size: 20px;
+    font-weight:600;
+    text-align: center;
+    line-height: 32px;
+    width: 80%;
+    padding: 30px 0px;
+  }
+
+  .boton-borde{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    width: 328px;
+    height: 58px;
+    transition: all 0.5s;
+  }
+
+  .boton-borde:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color:#FFFFFF;
+  }
+
+  .boton-borde p{
+    font-weight: 600;
+    margin: 0px 15px;
+  }
+
+  .boton-borde i{
+    font-size: 30px;
+    margin: 0px 15px;
+  }
 
 
    @media screen and (max-width: 1200px){
@@ -468,7 +549,15 @@
     .derecha{
      width: 605px;
     }
+    
+    .derecha .tarjeta{
+      width: 580px;
+    }
 
+    .derecha .tarjeta h3, .derecha .tarjeta p,  .derecha .contenedor-tag{
+      width: 525px;
+      /*border: 1px solid red;*/
+    }
   
   }
 
@@ -486,7 +575,7 @@
 
     
   .contenedor-menu{
-    width: 90%;
+    width: 85%;
     /*border: 2px solid blue;*/
   }
 
@@ -570,11 +659,42 @@
 
     .menu{
       display: none;
+      align-items:flex-start;
+      justify-content:center;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      overflow:hidden;
+      background-color: #F5F5F5;
     }
-    
+
+    .menu ul{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 100%;
+      margin-top: 120px;
+    }
+
+    .menu a{
+      display: block;
+      font-size: 25px;
+      width: 100%;
+      padding:20px 50px;
+    }
+
+    .menu-movil{
+     display: block;
+     font-size: 23px;
+     position: absolute;
+     left: 85%;
+    }
+  
     .contenido-cabecera{
       width: 610px;
-      margin-top: 160px;
+      margin-top: 180px;
      /* border: 1px solid violet;*/
     }
    
@@ -582,22 +702,22 @@
       font-size: 45px;
       font-weight:600;
       text-align: center;
-      line-height: 50px;
-      width: 90%;
+      line-height: 45px;
+      width: 85%;
       margin: auto;
       padding-bottom: 40px;
     }
   
     .contenido-cabecera h2{
-      font-size: 15px;
+      font-size: 16px;
       font-weight:600;
       line-height: 23px;
-      width: 85%;
+      width: 80%;
     }
     
     .contenido-cabecera p{
       font-size: 25px;
-      font-weight:500;
+      font-weight:600;
       line-height: 30px;
       margin-bottom: 10px;
     }
@@ -649,6 +769,30 @@
       width: 100%;
      }
 
+     .titulo-hablemos h2{
+      font-size: 35px;
+      line-height: 35px;
+      width: 80%;
+      padding-top: 150px;
+      }
+  
+    .contenido-hablemos{
+      width: 100%;
+      margin-top:30px;
+      /*border: 1px solid violet;*/
+    }
+  
+    .contenido-hablemos h2{
+      font-size: 16px;
+      line-height: 23px;
+      width: 80%;
+    }
+  
+    .boton-borde{
+      width: 85%;
+      height: 58px;
+    }
+
   
   }
 
@@ -669,8 +813,9 @@
     }
   
     .contenido-cabecera h2{
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 15px;
+      line-height: 23px;
+      width: 85%;
     }
     
     .contenido-cabecera p{

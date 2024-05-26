@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content=" #F5F5F5">
     <link rel="icon" href="images/logo.png" />
     <script src="https://kit.fontawesome.com/2ee0245f3d.js"></script>
-   <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="stylesheet" href="estilos.css">
     <title>Portfolio - Joel Canté</title>
 </head>
@@ -15,7 +16,7 @@
 <div class="contenedor-flotante" id="menu-flotante">
     <nav class="contenedor-menu">
         <a href="index.html" > <figure class="logo"> <img src="images/logo-negro.svg" alt=""></figure></a>
-        <div class="menu">
+        <div class="menu" id="menu">
          <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#" class="texto-verde">Portafolio</a></li>
@@ -23,6 +24,7 @@
             <li><a href="#">Contacto</a></li>
          </ul>
         </div>
+        <a class="menu-movil" onclick="abrir()"><i class="fa-solid fa-bars"></i></a>
     </nav>
 </div>
 
@@ -37,9 +39,9 @@
         <div class="flecha-deslizar bounce"><i class="fa-solid fa-arrows-up-down"></i></div>
    </div>
 </div>
-<div class="boton-ancla" id="ancla">
+<a class="boton-ancla subir" id="ancla">
     <i class="fa-solid fa-arrow-up"></i>
-</div>
+</a>
 </header>
 
 <section class="seccion-diseño">
@@ -141,6 +143,18 @@
             </article>
            </div>
     </div>
+</section>
+
+<section class="seccion-hablemos">
+    <div class="titulo-hablemos ancho">
+        <h2>¿Te interesa trabajar <span class="texto-rojo">conmigo?</span></h2>
+    </div>
+   <div class="contenido-hablemos ancho">
+    <h2>Cuéntame todo sobre tu proyecto <span class="emoji">🚀</span>.
+        Estoy abierto a platicar <span class="emoji">💬</span> , intercambiar 
+       ideas <span class="emoji">💡</span> y resolver todas tus dudas  <span class="emoji">📈</span> .</h2>
+    <a href="https://api.whatsapp.com/send/?phone=529996362870" class="boton-borde"><p>Hablemos</p> <i class="fa-brands fa-whatsapp"></i></a>
+   </div>
 </section>
 
 
