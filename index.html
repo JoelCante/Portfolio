@@ -15,7 +15,7 @@
 <header>
 <div class="contenedor-flotante" id="menu-flotante">
     <nav class="contenedor-menu">
-        <a href="index.html" > <figure class="logo"> <img src="images/logo-negro.svg" alt=""></figure></a>
+        <a href="index.html" > <figure class="logo logo-menu"></figure></a>
         <div class="menu" id="menu">
          <ul>
             <li><a href="#">Inicio</a> <i class="fa-solid fa-angle-right icono-movil"></i></li>
@@ -24,14 +24,14 @@
             <li><a href="#">Contacto</a> <i class="fa-solid fa-angle-right icono-movil"></i></li>
          </ul>
         </div>
-        <a class="menu-movil" onclick="abrir()"><i class="fa-solid fa-bars"></i></a>
+        <div class="menu-movil" onclick="abrir()"><i class="fa-solid fa-bars"></i></div>
     </nav>
 </div>
 
 <div class="contenedor-cabecera">
    <div class="contenido-cabecera ancho">
     <p>Hola 👋🏽</p>
-    <h1>Bienvenido a <span class="texto-manzana">mi Portafolio</span></h1>
+    <h1>Explora mi <span class="texto-gradiente-verde">portafolio.</span></h1>
     <h2>Soy diseñador de UX/UI   <span class="emoji">🖍️</span>, con experiencia en
         maquetación de sitios web <span class="emoji">🌎</span>.  Conoce mí portafolio <span class="emoji">🗂️</span>,
        donde encontrarás una selección de proyectos que muestran mis
@@ -159,21 +159,40 @@
 
 <footer class="pie-de-pagina">
     <div class="ancho contenedor-pie-arriba">
-      <div class="logo-pie">
+   <div class="contenedor-logo-pie">
+    <div class="logo-pie">
         <figure class="logo"> <img src="images/logo.svg" alt=""></figure>
         <p class="texto-logo">
             UI/UX Designer &
             Frontend Developer
         </p>
       </div>
+    <ul>
+        <li>  <a href="#">Volver al inicio </a></li>
+        <li><a href="#">Ver Servicios</a></li>
+    </ul>
+   </div>
 
-      <div class="contacto-footer">
-        <div class="red-social"><i class="fa-solid fa-location-dot"></i> <p>Yucatán, México</p></div>
-        <div class="red-social"><i class="fa-regular fa-envelope"></i> <p>jcantepat@gmail.com /
-            jcantedev@gmail.com</p></div>
-      </div>
+   <div class="contacto-footer">
+    <div class="red-social"><i class="fa-solid fa-location-dot"></i> <p>Yucatán, México</p></div>
+    <a href="#" class="red-social"><i class="fa-regular fa-envelope"></i> <p>jcantepat@gmail.com</p></a>
+    <a  href="#" class="red-social"><i class="fa-regular fa-envelope"></i> <p>jcantedev@gmail.com</p></a>
+  </div>
+
+  <div class="redes-sociales">
+    <p>Redes sociales</p>
+    <span class="contenedor-redes">
+    <a href="#" class="icono-red-social"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="icono-red-social"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" class="icono-red-social"><i class="fa-brands fa-dribbble"></i></a>
+    <a href="#" class="icono-red-social"><i class="fa-brands fa-behance"></i></a>
+    <a href="#" class="icono-red-social"><i class="fa-brands fa-figma"></i></a>
+    <a href="#" class="icono-red-social"><i class="fa-brands fa-github"></i></a>
+    </span>
+  </div>
 
     </div>
+    
 </footer>
 
 
